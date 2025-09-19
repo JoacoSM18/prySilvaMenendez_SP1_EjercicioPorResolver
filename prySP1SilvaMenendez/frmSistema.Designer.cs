@@ -34,11 +34,11 @@
             // lblBienvenido
             // 
             lblBienvenido.AutoSize = true;
-            lblBienvenido.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+            lblBienvenido.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
             lblBienvenido.ForeColor = SystemColors.Control;
-            lblBienvenido.Location = new Point(58, 37);
+            lblBienvenido.Location = new Point(27, 70);
             lblBienvenido.Name = "lblBienvenido";
-            lblBienvenido.Size = new Size(299, 37);
+            lblBienvenido.Size = new Size(352, 45);
             lblBienvenido.TabIndex = 0;
             lblBienvenido.Text = "Bienvenido al Sistema";
             // 
@@ -50,6 +50,7 @@
             ClientSize = new Size(404, 267);
             Controls.Add(lblBienvenido);
             Name = "frmSistema";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SISTEMA";
             ResumeLayout(false);
             PerformLayout();

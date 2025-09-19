@@ -16,5 +16,10 @@ namespace prySilvaMenendez_SP1_EjercicioPorResolver
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

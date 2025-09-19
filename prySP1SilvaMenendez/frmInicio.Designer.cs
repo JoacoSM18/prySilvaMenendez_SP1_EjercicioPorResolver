@@ -28,27 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             lblBienvenida = new Label();
             btnComenzar = new Button();
+            lblSintepart = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblBienvenida
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.BorderStyle = BorderStyle.Fixed3D;
-            lblBienvenida.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            lblBienvenida.Location = new Point(26, 39);
+            lblBienvenida.Font = new Font("Segoe UI", 15F);
+            lblBienvenida.Location = new Point(133, -4);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(409, 47);
+            lblBienvenida.Size = new Size(230, 30);
             lblBienvenida.TabIndex = 0;
-            lblBienvenida.Text = "BIENVENIDO AL SISTEMA";
+            lblBienvenida.Text = "INGRESE AL SISTEMA DE";
             lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
             lblBienvenida.Click += lblBienvenida_Click;
             // 
             // btnComenzar
             // 
             btnComenzar.Font = new Font("Segoe UI", 11F);
-            btnComenzar.Location = new Point(184, 124);
+            btnComenzar.Location = new Point(357, 202);
             btnComenzar.Name = "btnComenzar";
             btnComenzar.Size = new Size(110, 28);
             btnComenzar.TabIndex = 1;
@@ -56,18 +60,40 @@
             btnComenzar.UseVisualStyleBackColor = true;
             btnComenzar.Click += btnComenzar_click;
             // 
+            // lblSintepart
+            // 
+            lblSintepart.AutoSize = true;
+            lblSintepart.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblSintepart.Location = new Point(125, 26);
+            lblSintepart.Name = "lblSintepart";
+            lblSintepart.Size = new Size(238, 45);
+            lblSintepart.TabIndex = 2;
+            lblSintepart.Text = "Sintepart S.R.L";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(74, 81);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(289, 115);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
             // frmInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.BurlyWood;
+            BackColor = Color.Peru;
             ClientSize = new Size(479, 242);
+            Controls.Add(pictureBox1);
+            Controls.Add(lblSintepart);
             Controls.Add(btnComenzar);
             Controls.Add(lblBienvenida);
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "INICIO";
             Load += frmInicio_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -76,5 +102,7 @@
 
         private Label lblBienvenida;
         private Button btnComenzar;
+        private Label lblSintepart;
+        private PictureBox pictureBox1;
     }
 }
