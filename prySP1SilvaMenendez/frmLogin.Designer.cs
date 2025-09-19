@@ -34,7 +34,7 @@
             btnCancelar = new Button();
             txtNombre = new TextBox();
             txtContraseña = new TextBox();
-            comboBox1 = new ComboBox();
+            cmbModulo = new ComboBox();
             lblModulo = new Label();
             SuspendLayout();
             // 
@@ -90,6 +90,7 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(129, 23);
             txtNombre.TabIndex = 0;
+            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // txtContraseña
             // 
@@ -102,16 +103,16 @@
             txtContraseña.TabIndex = 5;
             txtContraseña.TextChanged += txtContraseña_TextChanged;
             // 
-            // comboBox1
+            // cmbModulo
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "ADM (Administracion)", "SIST (Sistemas)", "COM (Compras)", "VTA (Ventas)" });
-            comboBox1.Location = new Point(142, 140);
-            comboBox1.Margin = new Padding(2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(129, 23);
-            comboBox1.TabIndex = 6;
+            cmbModulo.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbModulo.FormattingEnabled = true;
+            cmbModulo.Items.AddRange(new object[] { "ADM (Administracion)", "SIST (Sistemas)", "COM (Compras)", "VTA (Ventas)" });
+            cmbModulo.Location = new Point(142, 140);
+            cmbModulo.Margin = new Padding(2);
+            cmbModulo.Name = "cmbModulo";
+            cmbModulo.Size = new Size(129, 23);
+            cmbModulo.TabIndex = 6;
             // 
             // lblModulo
             // 
@@ -132,7 +133,7 @@
             BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(428, 220);
             Controls.Add(lblModulo);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbModulo);
             Controls.Add(txtContraseña);
             Controls.Add(txtNombre);
             Controls.Add(btnCancelar);
@@ -156,7 +157,7 @@
         private Button btnCancelar;
         private TextBox txtNombre;
         private TextBox txtContraseña;
-        private ComboBox comboBox1;
+        private ComboBox cmbModulo;
         private Label lblModulo;
     }
 }
