@@ -42,10 +42,9 @@
             // 
             lblUsuario.AutoSize = true;
             lblUsuario.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblUsuario.Location = new Point(75, 72);
-            lblUsuario.Margin = new Padding(4, 0, 4, 0);
+            lblUsuario.Location = new Point(52, 43);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(79, 25);
+            lblUsuario.Size = new Size(54, 16);
             lblUsuario.TabIndex = 0;
             lblUsuario.Text = "Usuario";
             // 
@@ -53,20 +52,18 @@
             // 
             lblContraseña.AutoSize = true;
             lblContraseña.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblContraseña.Location = new Point(63, 130);
-            lblContraseña.Margin = new Padding(4, 0, 4, 0);
+            lblContraseña.Location = new Point(44, 78);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(114, 25);
+            lblContraseña.Size = new Size(76, 16);
             lblContraseña.TabIndex = 1;
             lblContraseña.Text = "Contraseña";
             // 
             // btnAceptar
             // 
             btnAceptar.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAceptar.Location = new Point(443, 59);
-            btnAceptar.Margin = new Padding(4, 5, 4, 5);
+            btnAceptar.Location = new Point(310, 35);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(110, 50);
+            btnAceptar.Size = new Size(77, 30);
             btnAceptar.TabIndex = 20;
             btnAceptar.Text = "&Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
@@ -75,10 +72,9 @@
             // btnCancelar
             // 
             btnCancelar.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCancelar.Location = new Point(443, 143);
-            btnCancelar.Margin = new Padding(4, 5, 4, 5);
+            btnCancelar.Location = new Point(310, 86);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(110, 48);
+            btnCancelar.Size = new Size(77, 29);
             btnCancelar.TabIndex = 3;
             btnCancelar.Text = "&Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -89,22 +85,20 @@
             txtNombre.Cursor = Cursors.IBeam;
             txtNombre.Font = new Font("Segoe UI", 9F);
             txtNombre.ForeColor = SystemColors.HotTrack;
-            txtNombre.Location = new Point(203, 59);
-            txtNombre.Margin = new Padding(4, 5, 4, 5);
+            txtNombre.Location = new Point(142, 35);
             txtNombre.MaxLength = 10;
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(183, 31);
+            txtNombre.Size = new Size(129, 23);
             txtNombre.TabIndex = 0;
             // 
             // txtContraseña
             // 
             txtContraseña.Cursor = Cursors.IBeam;
-            txtContraseña.Location = new Point(203, 130);
-            txtContraseña.Margin = new Padding(4, 5, 4, 5);
+            txtContraseña.Location = new Point(142, 78);
             txtContraseña.MaxLength = 10;
             txtContraseña.Name = "txtContraseña";
-            txtContraseña.PasswordChar = '*';
-            txtContraseña.Size = new Size(183, 31);
+            txtContraseña.PasswordChar = '#';
+            txtContraseña.Size = new Size(129, 23);
             txtContraseña.TabIndex = 5;
             txtContraseña.TextChanged += txtContraseña_TextChanged;
             // 
@@ -113,28 +107,30 @@
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "ADM (Administracion)", "SIST (Sistemas)", "COM (Compras)", "VTA (Ventas)" });
-            comboBox1.Location = new Point(203, 234);
+            comboBox1.Location = new Point(142, 140);
+            comboBox1.Margin = new Padding(2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(183, 33);
+            comboBox1.Size = new Size(129, 23);
             comboBox1.TabIndex = 6;
             // 
             // lblModulo
             // 
             lblModulo.AutoSize = true;
             lblModulo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblModulo.Location = new Point(77, 234);
+            lblModulo.Location = new Point(54, 140);
+            lblModulo.Margin = new Padding(2, 0, 2, 0);
             lblModulo.Name = "lblModulo";
-            lblModulo.Size = new Size(77, 25);
+            lblModulo.Size = new Size(52, 16);
             lblModulo.TabIndex = 7;
             lblModulo.Text = "Módulo";
             lblModulo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // frmLogin
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(611, 367);
+            ClientSize = new Size(428, 220);
             Controls.Add(lblModulo);
             Controls.Add(comboBox1);
             Controls.Add(txtContraseña);
@@ -143,7 +139,6 @@
             Controls.Add(btnAceptar);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LOGIN";

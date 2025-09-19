@@ -23,10 +23,10 @@ namespace prySP1SilvaMenendez
                 txtContraseña.Text == "ope246$"))
 
             {
-                this.Hide();
-                this.Close();
-                MessageBox.Show("Login Correcto");
-                this.Close();
+                frmInicio nuevoInicio = new frmInicio();
+                nuevoInicio.Show();
+                
+                
             }
             else
             {
@@ -50,14 +50,13 @@ namespace prySP1SilvaMenendez
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             {
-                this.Hide();
-                Application.OpenForms["frmInicio"].Show();
+                Application.Exit();
             }
         }
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+           
         }
 
     }

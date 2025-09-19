@@ -30,9 +30,6 @@ namespace prySilvaMenendezSP1
 
         private void btnAceptar2_Click(object sender, EventArgs e)
         {
-            frmLogin loginForm = new frmLogin();
-            loginForm.Show();
-            this.Hide();
         }
     }
 }
