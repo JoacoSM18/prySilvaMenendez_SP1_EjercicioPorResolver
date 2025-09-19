@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSistema));
             lblBienvenido = new Label();
             SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             BackColor = Color.BurlyWood;
             ClientSize = new Size(404, 267);
             Controls.Add(lblBienvenido);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmSistema";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SISTEMA";

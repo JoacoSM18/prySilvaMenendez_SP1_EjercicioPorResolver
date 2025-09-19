@@ -39,11 +39,10 @@
             // lblBienvenida
             // 
             lblBienvenida.AutoSize = true;
-            lblBienvenida.BorderStyle = BorderStyle.Fixed3D;
             lblBienvenida.Font = new Font("Segoe UI", 15F);
-            lblBienvenida.Location = new Point(133, -4);
+            lblBienvenida.Location = new Point(135, -2);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(230, 30);
+            lblBienvenida.Size = new Size(228, 28);
             lblBienvenida.TabIndex = 0;
             lblBienvenida.Text = "INGRESE AL SISTEMA DE";
             lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
@@ -52,7 +51,7 @@
             // btnComenzar
             // 
             btnComenzar.Font = new Font("Segoe UI", 11F);
-            btnComenzar.Location = new Point(357, 202);
+            btnComenzar.Location = new Point(345, 255);
             btnComenzar.Name = "btnComenzar";
             btnComenzar.Size = new Size(110, 28);
             btnComenzar.TabIndex = 1;
@@ -64,7 +63,7 @@
             // 
             lblSintepart.AutoSize = true;
             lblSintepart.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            lblSintepart.Location = new Point(125, 26);
+            lblSintepart.Location = new Point(125, 35);
             lblSintepart.Name = "lblSintepart";
             lblSintepart.Size = new Size(238, 45);
             lblSintepart.TabIndex = 2;
@@ -73,9 +72,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(74, 81);
+            pictureBox1.Location = new Point(106, 106);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(289, 115);
+            pictureBox1.Size = new Size(289, 130);
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
@@ -84,11 +83,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Peru;
-            ClientSize = new Size(479, 242);
+            ClientSize = new Size(479, 306);
             Controls.Add(pictureBox1);
             Controls.Add(lblSintepart);
             Controls.Add(btnComenzar);
             Controls.Add(lblBienvenida);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "INICIO";

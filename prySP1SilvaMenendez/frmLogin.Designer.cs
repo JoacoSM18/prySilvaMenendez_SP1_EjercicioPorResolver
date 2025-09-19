@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             lblUsuario = new Label();
             lblContraseña = new Label();
             btnAceptar = new Button();
@@ -138,6 +139,7 @@
             Controls.Add(btnAceptar);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LOGIN";
