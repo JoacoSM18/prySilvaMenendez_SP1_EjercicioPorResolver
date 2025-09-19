@@ -107,7 +107,7 @@
             // 
             cmbModulo.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbModulo.FormattingEnabled = true;
-            cmbModulo.Items.AddRange(new object[] { "ADM (Administracion)", "SIST (Sistemas)", "COM (Compras)", "VTA (Ventas)" });
+            cmbModulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
             cmbModulo.Location = new Point(142, 140);
             cmbModulo.Margin = new Padding(2);
             cmbModulo.Name = "cmbModulo";

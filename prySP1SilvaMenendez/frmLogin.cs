@@ -1,3 +1,4 @@
+using prySilvaMenendez_SP1_EjercicioPorResolver;
 using prySilvaMenendezSP1;
 
 namespace prySP1SilvaMenendez
@@ -26,32 +27,37 @@ namespace prySP1SilvaMenendez
                 (usuario == "Ceci" && contraseña == "*@3c") ||
                 (usuario == "God" && contraseña == "*@#4d"))
             {
+                if (usuario == "Adm")
                 {
-                    if (usuario == "Adm")
+                    modulosPermitidos = new string[] { "ADM", "COM", "VTA" };
+                }
+                else if (usuario == "John")
+                {
+                    modulosPermitidos = new string[] { "SIST" };
+                }
+                else if (usuario == "Ceci")
+                {
+                    modulosPermitidos = new string[] { "ADM", "VTA" };
+                }
+                else if (usuario == "God")
+                {
+                    modulosPermitidos = new string[] { "ADM", "COM", "VTA", "SIST" };
+                }
+                if (modulosPermitidos != null && modulosPermitidos.Contains(moduloSeleccionado))
+                {
+                    this.Hide();
+                    frmSistema f = new frmSistema();
+                    f.Text = usuario;
+                    f.ShowDialog();
+                    this.Show();
+                }
+                {
+                    MessageBox.Show("Datos Incorrectos. Acceso Denegado.");
+                    intentos++;
+                    if (intentos == 3)
                     {
-                        modulosPermitidos = new string[] { "ADM", "COM", "VTA" };
-                    }
-                    else if (usuario == "John")
-                    {
-                        modulosPermitidos = new string[] { "SIST" };
-                    }
-                    else if (usuario == "Ceci")
-                    {
-                        modulosPermitidos = new string[] { "ADM", "VTA" };
-                    }
-                    else if (usuario == "God")
-                    {
-                        modulosPermitidos = new string[] { "ADM", "COM", "VTA", "SIST" };
-                    }
-                    if (modulosPermitidos != null && modulosPermitidos.Contains(moduloSeleccionado))
-                    {
-                       
-                        MessageBox.Show("Datos incorrectos. Acceso Denegado.");
-                        intentos++;
-                        if (intentos == 3)
-                        {
-                            this.Close();
-                        }
+                        this.Close();
+
                     }
                 }
             }

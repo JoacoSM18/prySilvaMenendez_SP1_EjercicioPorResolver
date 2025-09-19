@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace prySilvaMenendezSP1
 {
@@ -28,8 +29,11 @@ namespace prySilvaMenendezSP1
 
         }
 
-        private void btnAceptar2_Click(object sender, EventArgs e)
+        private void btnComenzar_click(object sender, EventArgs e)
         {
+            frmLogin loginFormulario = new frmLogin();
+            loginFormulario.Show();
+            this.Hide();
         }
     }
 }

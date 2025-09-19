@@ -28,12 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            lblBienvenido = new Label();
+            SuspendLayout();
+            // 
+            // lblBienvenido
+            // 
+            lblBienvenido.AutoSize = true;
+            lblBienvenido.Font = new Font("Segoe UI", 20F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+            lblBienvenido.Location = new Point(131, 86);
+            lblBienvenido.Name = "lblBienvenido";
+            lblBienvenido.Size = new Size(302, 37);
+            lblBienvenido.TabIndex = 0;
+            lblBienvenido.Text = "Bienvenido Al Sistema";
+            // 
+            // frmSistema
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(564, 331);
+            Controls.Add(lblBienvenido);
+            Name = "frmSistema";
+            Text = "SISTEMA";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblBienvenido;
     }
 }

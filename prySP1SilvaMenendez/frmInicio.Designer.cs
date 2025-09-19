@@ -56,7 +56,7 @@
             btnComenzar.TabIndex = 1;
             btnComenzar.Text = "&COMENZAR";
             btnComenzar.UseVisualStyleBackColor = true;
-            btnComenzar.Click += btnAceptar2_Click;
+            btnComenzar.Click += btnComenzar_click;
             // 
             // frmInicio
             // 
