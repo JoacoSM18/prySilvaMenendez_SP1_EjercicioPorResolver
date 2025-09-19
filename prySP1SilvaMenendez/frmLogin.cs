@@ -10,10 +10,6 @@ namespace prySP1SilvaMenendez
             InitializeComponent();
         }
 
-        private void txtContraseña_TextChanged(object sender, EventArgs e)
-        {
-
-        }
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             int intentos = 0;
@@ -63,14 +59,6 @@ namespace prySP1SilvaMenendez
             }
         }
 
-
-
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             {
@@ -80,12 +68,7 @@ namespace prySP1SilvaMenendez
 
         private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
-
-        }
-
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

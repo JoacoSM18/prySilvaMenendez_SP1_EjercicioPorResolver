@@ -90,7 +90,6 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(129, 23);
             txtNombre.TabIndex = 0;
-            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // txtContraseña
             // 
@@ -101,7 +100,6 @@
             txtContraseña.PasswordChar = '#';
             txtContraseña.Size = new Size(129, 23);
             txtContraseña.TabIndex = 5;
-            txtContraseña.TextChanged += txtContraseña_TextChanged;
             // 
             // cmbModulo
             // 
@@ -144,7 +142,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LOGIN";
             FormClosed += frmLogin_FormClosed;
-            Load += frmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
