@@ -75,7 +75,7 @@
             btnCancelar.Location = new Point(310, 86);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(77, 29);
-            btnCancelar.TabIndex = 3;
+            btnCancelar.TabIndex = 10;
             btnCancelar.Text = "&Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
@@ -128,7 +128,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlLightLight;
+            BackColor = Color.BurlyWood;
             ClientSize = new Size(428, 220);
             Controls.Add(lblModulo);
             Controls.Add(cmbModulo);

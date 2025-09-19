@@ -37,10 +37,9 @@
             lblBienvenida.AutoSize = true;
             lblBienvenida.BorderStyle = BorderStyle.Fixed3D;
             lblBienvenida.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
-            lblBienvenida.Location = new Point(37, 65);
-            lblBienvenida.Margin = new Padding(4, 0, 4, 0);
+            lblBienvenida.Location = new Point(26, 39);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(610, 67);
+            lblBienvenida.Size = new Size(409, 47);
             lblBienvenida.TabIndex = 0;
             lblBienvenida.Text = "BIENVENIDO AL SISTEMA";
             lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
@@ -49,10 +48,9 @@
             // btnComenzar
             // 
             btnComenzar.Font = new Font("Segoe UI", 11F);
-            btnComenzar.Location = new Point(263, 207);
-            btnComenzar.Margin = new Padding(4, 5, 4, 5);
+            btnComenzar.Location = new Point(184, 124);
             btnComenzar.Name = "btnComenzar";
-            btnComenzar.Size = new Size(157, 47);
+            btnComenzar.Size = new Size(110, 28);
             btnComenzar.TabIndex = 1;
             btnComenzar.Text = "&COMENZAR";
             btnComenzar.UseVisualStyleBackColor = true;
@@ -60,12 +58,12 @@
             // 
             // frmInicio
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(684, 403);
+            BackColor = Color.BurlyWood;
+            ClientSize = new Size(479, 242);
             Controls.Add(btnComenzar);
             Controls.Add(lblBienvenida);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "INICIO";
