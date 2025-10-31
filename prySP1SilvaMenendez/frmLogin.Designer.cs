@@ -129,7 +129,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.BurlyWood;
+            BackColor = Color.Coral;
             ClientSize = new Size(428, 220);
             Controls.Add(lblModulo);
             Controls.Add(cmbModulo);

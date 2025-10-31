@@ -82,7 +82,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Peru;
+            BackColor = Color.Coral;
             ClientSize = new Size(479, 306);
             Controls.Add(pictureBox1);
             Controls.Add(lblSintepart);
