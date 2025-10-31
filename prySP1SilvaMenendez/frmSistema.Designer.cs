@@ -50,6 +50,7 @@
             BackColor = Color.Coral;
             ClientSize = new Size(404, 267);
             Controls.Add(lblBienvenido);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmSistema";
             StartPosition = FormStartPosition.CenterScreen;

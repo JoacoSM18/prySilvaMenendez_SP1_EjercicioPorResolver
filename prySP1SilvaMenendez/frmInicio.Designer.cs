@@ -90,6 +90,7 @@
             Controls.Add(lblSintepart);
             Controls.Add(btnComenzar);
             Controls.Add(lblBienvenida);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;

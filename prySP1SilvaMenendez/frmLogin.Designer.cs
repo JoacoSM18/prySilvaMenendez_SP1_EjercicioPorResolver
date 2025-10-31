@@ -142,6 +142,7 @@
             Controls.Add(btnAceptar);
             Controls.Add(lblContraseña);
             Controls.Add(lblUsuario);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
