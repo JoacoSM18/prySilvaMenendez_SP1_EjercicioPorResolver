@@ -42,20 +42,22 @@
             // lblUsuario
             // 
             lblUsuario.AutoSize = true;
-            lblUsuario.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblUsuario.Location = new Point(52, 43);
+            lblUsuario.Font = new Font("Microsoft Sans Serif", 11F);
+            lblUsuario.ForeColor = SystemColors.ButtonHighlight;
+            lblUsuario.Location = new Point(52, 40);
             lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(54, 16);
+            lblUsuario.Size = new Size(60, 18);
             lblUsuario.TabIndex = 0;
             lblUsuario.Text = "Usuario";
             // 
             // lblContraseña
             // 
             lblContraseña.AutoSize = true;
-            lblContraseña.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblContraseña.Location = new Point(44, 78);
+            lblContraseña.Font = new Font("Microsoft Sans Serif", 11F);
+            lblContraseña.ForeColor = SystemColors.ButtonHighlight;
+            lblContraseña.Location = new Point(41, 83);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new Size(76, 16);
+            lblContraseña.Size = new Size(85, 18);
             lblContraseña.TabIndex = 1;
             lblContraseña.Text = "Contraseña";
             // 
@@ -116,11 +118,12 @@
             // lblModulo
             // 
             lblModulo.AutoSize = true;
-            lblModulo.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblModulo.Location = new Point(54, 140);
+            lblModulo.Font = new Font("Microsoft Sans Serif", 11F);
+            lblModulo.ForeColor = SystemColors.ButtonHighlight;
+            lblModulo.Location = new Point(54, 145);
             lblModulo.Margin = new Padding(2, 0, 2, 0);
             lblModulo.Name = "lblModulo";
-            lblModulo.Size = new Size(52, 16);
+            lblModulo.Size = new Size(58, 18);
             lblModulo.TabIndex = 7;
             lblModulo.Text = "Módulo";
             lblModulo.TextAlign = ContentAlignment.MiddleCenter;

@@ -40,6 +40,7 @@
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Segoe UI", 15F);
+            lblBienvenida.ForeColor = SystemColors.ButtonHighlight;
             lblBienvenida.Location = new Point(135, -2);
             lblBienvenida.Name = "lblBienvenida";
             lblBienvenida.Size = new Size(228, 28);
@@ -63,6 +64,7 @@
             // 
             lblSintepart.AutoSize = true;
             lblSintepart.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblSintepart.ForeColor = SystemColors.ButtonHighlight;
             lblSintepart.Location = new Point(125, 35);
             lblSintepart.Name = "lblSintepart";
             lblSintepart.Size = new Size(238, 45);

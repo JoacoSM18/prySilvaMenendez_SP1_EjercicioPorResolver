@@ -47,7 +47,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.BurlyWood;
+            BackColor = Color.Coral;
             ClientSize = new Size(404, 267);
             Controls.Add(lblBienvenido);
             Icon = (Icon)resources.GetObject("$this.Icon");
